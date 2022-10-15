@@ -26,3 +26,11 @@ Kubernetes is an open source container orchestration platform that automates the
 
 Kubernetes can be used to manage both Linux and Windows containers, and is popularly used in conjunction with Docker. It offers a various benefits such as improved performance, scalability, and increased efficiency. One of the main benefits of Kubernetes is its ability to improve performance. By using Kubernetes, organizations can increase the number of applications that can be run on a single server. 
 
+## Prerequisite
+
+To utilize this repo, the following must be available on your local machine:
+
+* Node.js and NPM. Learn how to install Node.js and NPM [Here](https://nodejs.org/en/download/). 
+* Docker. Learn how to install docker [Here](https://docs.docker.com/desktop/install/windows-install/). 
+* Minikube and kubectl installed. Learn how to do that [Here](https://minikube.sigs.k8s.io/docs/start/).
+
