@@ -54,4 +54,5 @@ npm install
 ```
 npm start
 ```
+Now, our app should be running on `localhost:3000`. We can test if it's working by opening up a browser and enter 'localhost:3000'. If everything went smoothly, we should see our web app up and running!
 
