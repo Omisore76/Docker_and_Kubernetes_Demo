@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: omisore76/simple_webapp:2.0
+        image: omisore76/simple_webapp:1.0
         ports:
         - containerPort: 3000
 ---
