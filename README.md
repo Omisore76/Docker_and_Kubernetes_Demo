@@ -56,3 +56,31 @@ npm start
 ```
 Now, our app should be running on `localhost:3000`. We can test if it's working by opening up a browser and enter `localhost:3000`. If everything went smoothly, we should see our web app up and running!
 
+### Stage 2: Build Custom Docker Image
+
+The next step is to build a docker image using the Dockerfile. While you're in the project directory on your machine, run: 
+
+```
+docker build . -t omisore76/simple_webapp:1.0
+```
+
+**Note:** replace `omisore76` with your username on dockerhub.
+
+Then, push the docker image to dockerhub using the command:
+
+```
+docker login
+
+docker push omisore76/simple_webapp:1.0
+```
+
+**Note:** replace `omisore76` with your username on dockerhub.
+
+We can confirm if our docker image was built properly by create a docker container. Run
+```
+Docker run -d -p 3000:3000 omisore76/simple_webapp:1.0
+```
+**Note:** replace `omisore76` with your username on dockerhub.
+
+Again we should see our webapp up and running on localhost:3000
+
