@@ -34,3 +34,24 @@ To utilize this repo, the following must be available on your local machine:
 * Docker. Learn how to install docker [Here](https://docs.docker.com/desktop/install/windows-install/). 
 * Minikube and kubectl installed. Learn how to do that [Here](https://minikube.sigs.k8s.io/docs/start/).
 
+## How to Use This Repo
+
+### Stage 1: App Testing
+
+We need to test if the app is working. In order to test if the app is working, we need to take the following steps: 
+
+1) Fork the repo, and clone it on our local device. 
+
+2) Navigate to the project directory. 
+
+3) Switch to the `simple_webapp` directory. 
+
+4) Run
+```
+npm install 
+```
+5) And finally run 
+```
+npm start
+```
+
