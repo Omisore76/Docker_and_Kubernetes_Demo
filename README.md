@@ -85,3 +85,27 @@ Docker run -d -p 3000:3000 omisore76/simple_webapp:1.0
 
 Again we should see our webapp up and running on localhost:3000
 
+### Stage 3: Deploy containerized app on Kubernetes
+
+The last stage is deploying our containerized app on Kubernetes. With minikube installed, we will run:
+```
+minikube start –-driver=hyperv
+```
+**Note:** `virtualbox` can be used in place of hyperv as the driver, provided you have it installed. Also, `docker` can also be used.
+
+Once minikube is started, run
+```
+kubectl apply -f simple_app.yaml
+```
+**Note:** you can open the `simple_app.yaml` file with your favourite editor. In the container block, replace `omisore76` with your dockerhub username in the image name. This step is optional, as the deployment will still be successful, this is because the default docker image `(omisore76/simple_webapp:1.0)` is publicly available.
+
+Next run
+```
+minikube service webapp-service
+```
+This will open the webapp page on your browser.
+
+
+We have successful build an app, dockerized it, and deploy it on Kubernetes.
+
+Thank you!
