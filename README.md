@@ -32,6 +32,7 @@ To utilize this repo, the following must be available on your local machine:
 
 * Node.js and NPM. Learn how to install Node.js and NPM [Here](https://nodejs.org/en/download/). 
 * Docker. Learn how to install docker [Here](https://docs.docker.com/desktop/install/windows-install/). 
+* Dockerhub account
 * Minikube and kubectl installed. Learn how to do that [Here](https://minikube.sigs.k8s.io/docs/start/).
 
 ## How to Use This Repo
