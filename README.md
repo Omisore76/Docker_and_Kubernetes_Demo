@@ -97,7 +97,7 @@ minikube start –-driver=hyperv
 ```
 **Note:** `virtualbox` can be used in place of hyperv as the driver, provided you have it installed. Also, `docker` can also be used.
 
-Once minikube is started, run
+Once minikube has started, run
 ```
 kubectl apply -f simple_app.yaml
 ```
